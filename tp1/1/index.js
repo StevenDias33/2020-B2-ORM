@@ -6,9 +6,20 @@ exports = module.exports = {
   name: "Marathon",
   datasets,
   algo: function (input) {
-    // YOUR CODE BETWEEN HERE
-
-    // AND HERE
+    var data=input[0]
+    parseInt(data)
+    for(let i=0;i<input.length;i++) 
+    if (data == 50 ) {
+      console.log('argent')
+      let output = 1000
+      console.log(output)
+    }
+    return output
+    //if (input == 0 )
+    //{
+    //  console.log("argent")
+    //}
+    
   },
   verify: function (dataset, output) {
     if (dataset.output !== output) {
