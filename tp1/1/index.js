@@ -9,17 +9,18 @@ exports = module.exports = {
     var data=input[0]
     parseInt(data)
     for(let i=0;i<input.length;i++) 
-    if (data == 50 ) {
-      console.log('argent')
-      let output = 1000
-      console.log(output)
+    if (data < 101 ) {
+    output = 1000
     }
-    return output
-    //if (input == 0 )
-    //{
-    //  console.log("argent")
-    //}
-    
+    console.log(data)
+    if (data > 101 && data < 10100) {
+      output = 100
+    }
+    if (data > 10100) {
+      output = 'KO'
+  }
+
+return output
   },
   verify: function (dataset, output) {
     if (dataset.output !== output) {
