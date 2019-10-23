@@ -6,9 +6,12 @@ exports = module.exports = {
   name: "Déménagement",
   datasets,
   algo: function (input) {
-    // YOUR CODE BETWEEN HERE
 
-    // AND HERE
+    for(let i=0;i<input.length;i++) 
+    
+    data = input[i]
+
+    
   },
   verify: function (dataset, output) {
     if (dataset.output !== output) {
